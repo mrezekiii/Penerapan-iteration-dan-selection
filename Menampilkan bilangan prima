@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+//TUGAS PRAKTIKUM DIRUMAH (Menampilkan bilangan PRIMA) 05/05/2020 MUHAMMAD REZEKI 
+	/*Bilangan Prima ngitu artinya adalah bilangan asli nang barnilai lebih dari 1 
+		dan mempunyai 2 faktor pembagi yaitu 1 dan bilangan itu sendiri */
+	
+int main (){
+	int angkaAwalun;int angkaAkhirun;
+	cout << "Silahkan picik angka awal nang pian handaki :"<< endl;
+	cin >> angkaAwalun;
+	cout << "Jangan kada ingat picik angka akhir nang handak di tantuakan :"<< endl;
+	cin >> angkaAkhirun;
+	cout << endl;
+	for (int i = angkaAwalun ; i <= angkaAkhirun; i++){
+		int counterPrima = 0;
+		for (int a = 1 ; a <= i ; a++){
+			if (i % a == 0){
+				counterPrima++;
+			}
+		}
+		if (counterPrima == 2){
+			cout << i << " : nah sekalinya bilangan PRIMA juaai" << endl;
+		}
+		
+	}		
+	return 0;
+}
